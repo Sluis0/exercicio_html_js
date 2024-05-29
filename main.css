@@ -48,6 +48,7 @@ h1 {
     font-size: 20px;
     color: white;
     text-align: center;
+    display: none;
 }
 
 .error-msg {
