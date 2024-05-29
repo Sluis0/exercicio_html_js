@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <div class="container">
+        <form id="form-cadastro">
+            <input type="text" id=nome placeholder="Nome completo" required>
+            <p class="error-msg">
+                O nome precisa ser completo
+            </p>
+            <input type="text" id="placa" placeholder="Placa do Veiculo" required>
+            <div class="type-quant">
+                <label for="escolha">Tipo do Veiculo</label>
+                <select name="Tipo" id="escolha" required>
+                    <option value="" disabled="" selected="">-----------</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Carro">Carro</option>
+                    <option value="Caminhao">Caminhão</option>
+                </select>
+                <input type="number" id="infra" placeholder="Quantidade de Infrações (Max. Permitido: 2)" required>
+            </div>
+            <textarea placeholder="Observações (Opcional)"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p class="msg-sucsses">
+            Veiculo da classe <b>Moto</b>, placa: <b>Placa</b>, registrado em nome de: <b>Cliente</b>. Infrações: <b>Valido</b>
+        </p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
